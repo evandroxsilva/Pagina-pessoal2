@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem sou eu!</title>
+    <style>
+      body {
+            background-color: rgb(24, 160, 214);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           }
+      img {
+            width: 15rem;
+            border-radius: 20%;
+           }
+      h1 {
+            color: rgba(235, 28, 28, 0.986);
+            font-size: 2rem;
+           }
+      p,
+        li {
+            color: black;
+            font-size: 1.4rem;
+           }
+        input {
+            font-size: 1.4rem;
+            color: green;
+            margin-bottom: 1rem;
+           }
+        button {
+            font-size: 1.4rem;
+            width: 10rem;
+            border-radius: 10px;
+           }
+    </style>
+    
+</head>
+<body>
+        <img
+        src="http://2.bp.blogspot.com/-ia0R4Az0lN8/U_40uqZP5tI/AAAAAAAAAO4/PMSWZY1e8nA/s1600/raul%2Bseixas.jpg"
+        alt="Raul Seixas"
+        />
+        <h2>Lista de visitante:</h2>
+        <input 
+        id="caixa_nome" 
+        type="text" 
+        placeholder="Digite seu nome aqui...">
+        <input 
+        id="caixa_email" 
+        type="text" 
+        placeholder="Digite seu email aqui...">
+        <button id="btn_enviar">Enviar</button>
+
+
+        <h1> Quem sou eu!</h1>
+        <p>Olá, eu me chamo Evando Silva, tenho 39 anos, trabalho em uma empresa chamada Perto Periféricos que atua na área de automação bancária.
+           Viajo por todo o estado do Piauí efetuando atendimento a clientes. 
+        </p>
+        <h1>Formação Acadêmica</h1>
+        <ul>
+            <li>Técnico em Eletrônica</li>
+            <li>Técnico em Refrigeração e Climatização</li>
+            <li>Tecnólogo em Gestão de Sistemas de Informação</li>
+        </ul>
+        <script>
+            const comp_btn_enviar = document.getElementById("btn_enviar")
+            const comp_caixa_nome = document.getElementById('caixa_nome')
+            const comp_caixa_email = document.getElementById('caixa_email')
+
+            comp_btn_enviar.onclick = () => { 
+                const nome = comp_caixa_nome.value;
+                const email = comp_caixa_email.value;
+
+                const mensagem = "Olá " +
+                nome +
+                " obrigado por se inscrever " +
+                email;
+                // console.log(mensagem);
+                alert (mensagem);                
+            };
+                             
+      </script>
+  </body> 
+</html>
 
